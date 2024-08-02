@@ -116,4 +116,10 @@
 #define IOMUX_M2_BT_OFF		MX6_PAD_NANDF_D1__GPIO2_IO01	//M.2_BT_OFF
 #define	M2_WLAN_OFF		IMX_GPIO_NR(2, 7)
 #define	M2_BT_OFF		IMX_GPIO_NR(2, 1)
+
+/* Eklenen Tanımlar */
+#define CONFIG_SILENT_CONSOLE
+#define CONFIG_SILENT_U_BOOT_ONLY
+#define CONFIG_SYS_DEVICE_NULLDEV
+
 #endif                         /* __MX6ADVANTECH_CONFIG_H */
