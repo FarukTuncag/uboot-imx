@@ -667,7 +667,10 @@ int do_bootm_states(struct cmd_tbl *cmdtp, int flag, int argc,
 	boot_os_fn *boot_fn;
 	ulong iflag = 0;
 	int ret = 0, need_boot_fn;
-
+	
+	// BOOTM_CL_SILENT bayrağını ayarlama
+	bootm_state.cmdline.flags |= BOOTM_CL_SILENT;
+	
 	images->state |= states;
 
 	/*
